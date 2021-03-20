@@ -1,0 +1,9 @@
+rootProject.name = 'sliderRuler'
+include ':@react-native-community_progress-bar-android'
+project(':@react-native-community_progress-bar-android').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/progress-bar-android/android')
+include ':react-native-slider-ruler'
+project(':react-native-slider-ruler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-slider-ruler/android')
+include ':@react-native-community_progress-view'
+project(':@react-native-community_progress-view').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/progress-view/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
